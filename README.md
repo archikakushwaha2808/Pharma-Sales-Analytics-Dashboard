@@ -1,8 +1,6 @@
 # Pharma-Sales-Analytics-Dashboard
 Pharma Sales Analytics Dashboard built using Python, SQL, Excel, and Power BI to analyze multi-level pharmaceutical sales data, identify demand trends, perform statistical analysis, and create interactive business intelligence dashboards for data-driven decision making.
 
-Pharma Sales Analytics & Demand Forecasting
-
 Project Overview
 
 This project focuses on analyzing pharmaceutical sales data to understand demand patterns, sales trends, and key business drivers. The goal is to help a pharma company make data-driven decisions related to inventory planning, demand forecasting, and sales strategy.

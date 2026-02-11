@@ -1,0 +1,162 @@
+CREATE DATABASE pharma_project;
+USE pharma_project;
+
+SELECT * FROM salesdaily LIMIT 5;
+
+-- BASIC BUSINESS QUERIES
+-- TOTAL SALES PER DRUG
+SELECT
+    SUM(M01AB) AS M01AB_Total,
+    SUM(M01AE) AS M01AE_Total,
+    SUM(N02BA) AS N02BA_Total,
+    SUM(N02BE) AS N02BE_Total
+FROM salesdaily;
+
+-- AVERAGE SALES PER DRUG
+SELECT
+    AVG(M01AB),
+    AVG(M01AE),
+    AVG(N02BA),
+    AVG(N02BE)
+FROM salesdaily;
+
+-- HIGHEST SALES DAY
+SELECT datum, N02BE
+FROM salesdaily
+ORDER BY N02BE DESC
+LIMIT 1;
+
+-- LOWEST SALES DAY
+SELECT datum, N02BE
+FROM salesdaily
+ORDER BY N02BE ASC
+LIMIT 1;
+
+-- TIME ANALYSIS
+-- YEARLY SALES TREND
+SELECT Year, SUM(N02BE) AS Total_Sales
+FROM salesdaily
+GROUP BY Year
+ORDER BY Year;
+
+-- Monthly Sales Pattern
+SELECT Month, SUM(N02BE) AS Monthly_Sales
+FROM salesdaily
+GROUP BY Month
+ORDER BY Month;
+
+-- HOURLY SALES PATTERN
+SELECT Hour, AVG(N02BE) AS Avg_Sales
+FROM salesdaily
+GROUP BY Hour
+ORDER BY Hour;
+
+
+-- WEEKDAYS SALES COMPARISON
+SELECT `Weekday Name`, AVG(N02BE) AS Avg_Sales
+FROM salesdaily
+GROUP BY `Weekday Name`
+ORDER BY Avg_Sales DESC;
+
+
+-- TOP 5 HIGHEST SALES DAYS
+SELECT datum, N02BE
+FROM salesdaily
+ORDER BY N02BE DESC
+LIMIT 5;
+
+
+-- COUNT HIGH DEMAND DAYS
+SELECT COUNT(*)
+FROM salesdaily
+WHERE N02BE >
+      (SELECT AVG(N02BE) FROM salesdaily);
+
+
+-- SALES GREATER THAN AVERAGE
+SELECT datum, N02BE
+FROM salesdaily
+WHERE N02BE >
+      (SELECT AVG(N02BE) FROM salesdaily);
+
+
+-- RUNNING TOTAL SERIES
+SELECT
+    datum,
+    N02BE,
+    SUM(N02BE) OVER (ORDER BY datum) AS Running_Total
+FROM salesdaily;
+
+
+-- RANK SALES DAYS
+SELECT
+    datum,
+    N02BE,
+    RANK() OVER (ORDER BY N02BE DESC) AS Sales_Rank
+FROM salesdaily;
+
+
+-- DAILY SALES COMPARED TO AVERAGE
+SELECT
+    datum,
+    N02BE,
+    AVG(N02BE) OVER () AS Overall_Avg
+FROM salesdaily;
+
+
+-- YEARLY GROWTH ANALYSIS
+SELECT
+    Year,
+    SUM(N02BE) AS Yearly_Sales,
+    LAG(SUM(N02BE)) OVER (ORDER BY Year) AS Previous_Year
+FROM salesdaily
+GROUP BY Year;
+
+-- MONTH WITH HIGHEST SALES
+SELECT Month, SUM(N02BE) AS Sales
+FROM salesdaily
+GROUP BY Month
+ORDER BY Sales DESC
+LIMIT 1;
+
+
+-- WEEKEND VS WEEKDAYS SALES
+SELECT
+    CASE
+        WHEN `Weekday Name` IN ('Saturday','Sunday')
+        THEN 'Weekend'
+        ELSE 'Weekday'
+    END AS Day_Type,
+    AVG(N02BE) AS Avg_Sales
+FROM salesdaily
+GROUP BY Day_Type;
+
+
+-- DRUG WITH HIGHEST CONTRIBUTION
+SELECT
+    SUM(M01AB) AS M01AB,
+    SUM(M01AE) AS M01AE,
+    SUM(N02BA) AS N02BA,
+    SUM(N02BE) AS N02BE
+FROM salesdaily;
+
+
+-- IDENTIFY PEAK SALES HOUR
+SELECT Hour, SUM(N02BE) AS Sales
+FROM salesdaily
+GROUP BY Hour
+ORDER BY Sales DESC
+LIMIT 1;
+
+
+-- SALES VARIABILITY
+SELECT
+    STDDEV(N02BE) AS Sales_Variation
+FROM salesdaily;
+
+
+
+
+
+
+

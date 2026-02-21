@@ -49,7 +49,7 @@ Tracking category-level trends over time highlights which drug segments demonstr
 
 
 Sales Forecast Projection
-![Forecast](images/drug_sales_forecast.png)
+![Forecast](drug_sales_forecast.png)
 
 The forecasting model projects future sales based on historical trends. The projection indicates continued growth, assisting with quarterly planning, procurement strategy, and revenue target setting.
 
@@ -58,9 +58,11 @@ Business Interpretation
 
 The combined findings suggest a business environment characterized by strong revenue concentration, predictable seasonal patterns, and sustained growth. Leveraging these insights enables improved inventory optimization, better resource allocation, and data-driven decision-making.
 
+
 Technical Stack
 
 The project was implemented using Python for data cleaning and analysis, SQL for KPI aggregation, Excel for initial exploration, and Power BI for dashboard visualization. Together, these tools form a complete analytical workflow.
+
 
 Conclusion
 

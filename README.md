@@ -24,14 +24,14 @@ Overall Revenue Growth Trend
 The yearly revenue trend shows a consistent upward trajectory, indicating sustained market demand. Noticeable revenue spikes suggest cyclical performance, possibly influenced by seasonal or promotional effects. From a strategic standpoint, this reflects stable business expansion.
 
 Revenue Concentration by Drug Category
-![Top Categories](top_selling_categories.png)
+![Top Categories](sales_contribution_by_drug_category.png)
 
 The analysis reveals that a limited number of drug categories contribute significantly to total revenue. This distribution pattern resembles the Pareto principle, where a small subset of products generates the majority of revenue.
 
 Such insight supports focused resource allocation and category prioritization strategies.
 
 Seasonal Demand Pattern
-![Monthly Heatmap](images/monthwise_avg_sales_heatmap.png)
+![Monthly Heatmap](monthwise_avg_sales_heatmap.png)
 
 The heatmap highlights recurring seasonal peaks and troughs in demand. Certain months consistently demonstrate stronger sales performance. This predictable seasonality enables proactive inventory planning and improved supply chain coordination.
 

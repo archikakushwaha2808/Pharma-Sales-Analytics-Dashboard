@@ -1,217 +1,68 @@
-Pharma Sales Analytics & Business Intelligence Dashboard
-1. Executive Summary
+Pharma Sales Analytics & Business Intelligence Case Study
+Executive Summary
 
-This project presents an end-to-end analysis of pharmaceutical sales data to uncover revenue drivers, demand patterns, seasonal effects, and revenue concentration across drug categories.
+This project presents a comprehensive analysis of pharmaceutical sales data with the objective of identifying revenue drivers, understanding seasonal demand fluctuations, and evaluating product-level performance. The analysis converts raw transactional data into meaningful business insights that can assist decision-makers in improving revenue strategy, inventory planning, and operational efficiency.
 
-The objective was to convert raw transactional data into structured business insights that support inventory optimization, revenue forecasting, and strategic product prioritization.
+Through a combination of Python-based exploratory data analysis, SQL-driven KPI computation, and Power BI dashboard development, this project demonstrates how structured analytics can support strategic business decisions in a pharmaceutical sales environment.
 
-The project integrates Python-based exploratory analysis, SQL-driven KPI extraction, and Power BI dashboard visualization to create a complete analytical workflow.
+Business Context
 
-2. Business Context
+Pharmaceutical companies operate in highly demand-sensitive markets where slight forecasting errors can lead to financial inefficiencies such as overstocking or stock-outs. Understanding which drug categories drive revenue, how sales fluctuate across time, and how future demand may evolve is critical for sustainable growth.
 
-Pharmaceutical companies operate in demand-sensitive environments where accurate forecasting and inventory planning directly impact profitability.
+This analysis examines revenue concentration patterns, seasonal behavior, monthly variability, and long-term growth trends. The goal is to move beyond visualization and extract actionable business insights.
 
-Key challenges addressed in this project:
+Data Preparation & Feature Engineering
 
-Revenue concentration across limited product categories
+The dataset consists of pharmaceutical transactional records including drug categories, sales dates, and revenue metrics. Data preparation included handling missing values, standardizing date formats, extracting month and year components, and aggregating revenue at multiple time levels.
 
-Seasonal demand fluctuations
+This structured preprocessing enabled deeper time-series analysis and KPI computation.
 
-Monthly sales volatility
+Revenue & Trend Analysis
+Overall Revenue Growth Trend
+![Yearly Sales Trend](images/yearly_drug_sales_trend.png)
 
-Inventory misallocation risks
+The yearly revenue trend shows a consistent upward trajectory, indicating sustained market demand. Noticeable revenue spikes suggest cyclical performance, possibly influenced by seasonal or promotional effects. From a strategic standpoint, this reflects stable business expansion.
 
-Lack of predictive visibility
+Revenue Concentration by Drug Category
+![Top Categories](images/top_selling_categories.png)
 
-3. Objectives
+The analysis reveals that a limited number of drug categories contribute significantly to total revenue. This distribution pattern resembles the Pareto principle, where a small subset of products generates the majority of revenue.
 
-Analyze overall sales growth trends
+Such insight supports focused resource allocation and category prioritization strategies.
 
-Identify high-performing drug categories
+Seasonal Demand Pattern
+![Monthly Heatmap](images/monthwise_avg_sales_heatmap.png)
 
-Detect seasonal patterns
+The heatmap highlights recurring seasonal peaks and troughs in demand. Certain months consistently demonstrate stronger sales performance. This predictable seasonality enables proactive inventory planning and improved supply chain coordination.
 
-Study revenue concentration
+Monthly Revenue Distribution & Variability
+![Monthly Distribution](images/monthly_sales_distribution.png)
 
-Evaluate monthly variability
+This visualization reveals revenue spread and volatility across months. It identifies periods of abnormal performance and revenue outliers. Understanding such variability allows businesses to manage risk more effectively during uncertain demand cycles.
 
-Build a sales forecasting model
+Category Performance Over Time
+![Category Trend](images/category_trend_over_time.png)
 
-Develop an executive dashboard
+Tracking category-level trends over time highlights which drug segments demonstrate stable growth and which exhibit fluctuating patterns. This analysis supports product lifecycle management and category-level strategic decisions.
 
-4. Dataset & Preprocessing
+Cumulative Revenue Growth
+![Cumulative Revenue](images/cumulative_revenue_growth.png)
 
-The dataset includes:
+The cumulative growth curve illustrates long-term revenue acceleration and compounding growth. This perspective is useful for executive reporting and evaluating overall business trajectory.
 
-Drug category
+Sales Forecast Projection
+![Forecast](images/drug_sales_forecast.png)
 
-Sales date
+The forecasting model projects future sales based on historical trends. The projection indicates continued growth, assisting with quarterly planning, procurement strategy, and revenue target setting.
 
-Monthly revenue
+Business Interpretation
 
-Yearly performance
+The combined findings suggest a business environment characterized by strong revenue concentration, predictable seasonal patterns, and sustained growth. Leveraging these insights enables improved inventory optimization, better resource allocation, and data-driven decision-making.
 
-Sales metrics
+Technical Stack
 
-Preprocessing steps:
+The project was implemented using Python for data cleaning and analysis, SQL for KPI aggregation, Excel for initial exploration, and Power BI for dashboard visualization. Together, these tools form a complete analytical workflow.
 
-Missing value handling
+Conclusion
 
-Date formatting & feature extraction
-
-Aggregation by month and year
-
-KPI computation
-
-Category-level revenue breakdown
-
-5. Analytical Findings & Visual Insights
-5.1 Overall Revenue Growth Trend
-![Yearly Sales Trend](yearly_drug_sales_trend.png)
-
-Insights:
-
-Consistent upward revenue trend
-
-Strong mid-year spikes
-
-Indicates stable and growing market demand
-
-5.2 Revenue Concentration (Top Categories)
-![Top Categories](top_selling_categories.png)
-
-Insights:
-
-Limited categories generate majority revenue
-
-Revenue follows Pareto-like distribution
-
-Strategic focus on top SKUs can increase profitability
-
-5.3 Monthly Seasonal Heatmap
-![Monthly Heatmap](monthwise_avg_sales_heatmap.png)
-
-Insights:
-
-Predictable seasonal peaks
-
-Certain months consistently outperform
-
-Supports proactive inventory planning
-
-5.4 Monthly Sales Distribution (Volatility Analysis)
-![Monthly Distribution](monthly_sales_distribution.png)
-
-Insights:
-
-Reveals sales spread across months
-
-Identifies outliers and revenue variability
-
-Useful for risk-based demand planning
-
-5.5 Category-Wise Performance Trend
-![Category Trend](category_trend_over_time.png)
-
-Insights:
-
-Compares growth trajectory of major drug categories
-
-Identifies stable vs fluctuating categories
-
-Enables product-level strategic decisions
-
-5.6 Cumulative Revenue Growth
-![Cumulative Revenue](cumulative_revenue_growth.png)
-
-Insights:
-
-Demonstrates long-term compounding revenue
-
-Shows acceleration pattern
-
-Useful for performance evaluation
-
-5.7 Sales Forecast Projection
-![Forecast](drug_sales_forecast.png)
-
-Insights:
-
-Predicts steady growth trend
-
-Assists quarterly demand planning
-
-Reduces stock-out and overstock risks
-
-6. Business Recommendations
-
-Based on analysis:
-
-Prioritize high-revenue categories
-
-Implement seasonal inventory allocation
-
-Use forecast outputs for quarterly planning
-
-Review underperforming categories
-
-Integrate predictive models into operations
-
-7. Dashboard Features
-
-The Power BI dashboard includes:
-
-Revenue KPIs
-
-Category-level comparison
-
-Monthly trend visualization
-
-Seasonal heatmaps
-
-Forecast analysis
-
-Interactive filters and slicers
-
-8. End-to-End Workflow
-
-Data Cleaning
-
-Feature Engineering
-
-Exploratory Data Analysis
-
-KPI Derivation
-
-Visualization
-
-Forecast Modeling
-
-Dashboard Reporting
-
-9. Skills Demonstrated
-
-Data Cleaning & Transformation
-
-KPI Identification
-
-Revenue Concentration Analysis
-
-Seasonal Trend Analysis
-
-Forecast Interpretation
-
-Business Insight Generation
-
-Dashboard Design
-
-Data Storytelling
-
-10. How to Run
-pip install pandas numpy matplotlib seaborn scikit-learn
-
-Run Jupyter notebooks
-
-Open Power BI dashboard
-
-Explore insights interactively
+This case study demonstrates practical Data Analyst competencies including trend identification, revenue concentration analysis, seasonality detection, forecasting, and business storytelling. It reflects the ability to transform raw sales data into structured, strategic insights.

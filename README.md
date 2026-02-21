@@ -1,110 +1,217 @@
-# Pharma-Sales-Analytics-Dashboard
-Pharma Sales Analytics Dashboard built using Python, SQL, Excel, and Power BI to analyze multi-level pharmaceutical sales data, identify demand trends, perform statistical analysis, and create interactive business intelligence dashboards for data-driven decision making.
+Pharma Sales Analytics & Business Intelligence Dashboard
+1. Executive Summary
 
-Project Overview
+This project presents an end-to-end analysis of pharmaceutical sales data to uncover revenue drivers, demand patterns, seasonal effects, and revenue concentration across drug categories.
 
-This project focuses on analyzing pharmaceutical sales data to understand demand patterns, sales trends, and key business drivers. The goal is to help a pharma company make data-driven decisions related to inventory planning, demand forecasting, and sales strategy.
-The project covers the complete data analytics lifecycle, including data exploration, SQL analysis, statistical reasoning, probability analysis, and machine learning–based forecasting.
+The objective was to convert raw transactional data into structured business insights that support inventory optimization, revenue forecasting, and strategic product prioritization.
 
-Business Problem
+The project integrates Python-based exploratory analysis, SQL-driven KPI extraction, and Power BI dashboard visualization to create a complete analytical workflow.
 
-Pharmaceutical companies need to:
-Identify high-demand drug categories
-Understand seasonal and time-based sales patterns
-Compare weekday vs weekend demand
-Forecast future demand to avoid stock-outs or over-stocking
-This project answers these questions using historical sales data.
+2. Business Context
 
- Dataset Description
+Pharmaceutical companies operate in demand-sensitive environments where accurate forecasting and inventory planning directly impact profitability.
 
-The analysis uses multi-granularity sales data:
-salesdaily.csv – Daily drug sales data
-saleshourly.csv – Hour-wise sales data
-salesweekly.csv – Weekly aggregated sales
-salesmonthly.csv – Monthly aggregated sales
-Using multiple datasets allows analysis at different time levels and avoids noise during forecasting.
+Key challenges addressed in this project:
 
-Tools & Technologies Used
+Revenue concentration across limited product categories
 
-Python (Pandas, NumPy, Matplotlib, Seaborn)
-SQL (MySQL) – business queries & analytics
-Excel – pivot analysis & KPI reporting
-Statistics & Probability – hypothesis testing, risk analysis
-Machine Learning
-Regression models
-Time-series forecasting (Prophet)
-Google Colab – development environment
+Seasonal demand fluctuations
 
-Exploratory Data Analysis (EDA)
+Monthly sales volatility
 
-Key EDA steps included:
-Data quality checks and validation
-Trend analysis (daily, monthly, yearly)
-Seasonality and peak demand identification
-Outlier and variability analysis
-Drug-wise contribution analysis
-Hourly, weekday, and weekend demand patterns
+Inventory misallocation risks
 
- Statistical & Probability Analysis
+Lack of predictive visibility
 
-Distribution analysis of drug demand
-Hypothesis testing (weekday vs weekend sales)
-Correlation analysis between drug categories
-Probability of high-demand events
-Conditional probability for weekend and peak-hour demand
-These analyses help in understanding uncertainty and demand risk.
+3. Objectives
 
-Machine Learning & Forecasting
+Analyze overall sales growth trends
 
-Regression model to predict drug sales using time-based features
-Time-series forecasting to predict future demand for high-selling drugs
-Model evaluation using error metrics and trend validation
+Identify high-performing drug categories
 
- SQL Analysis
+Detect seasonal patterns
 
-SQL was used to extract business insights such as:
-Total and average sales per drug
-Yearly and monthly sales trends
-Peak sales days and hours
-Weekend vs weekday comparison
-Running totals, ranking, and growth analysis using window functions
+Study revenue concentration
 
-Excel Analysis
+Evaluate monthly variability
 
-Excel was used for:
-Pivot-based analysis
-KPI calculations
-Quick business summaries
-Stakeholder-friendly reporting
+Build a sales forecasting model
 
-Key Insights
+Develop an executive dashboard
 
-N02BE is the highest-demand drug category
-Sales show clear seasonal and monthly patterns
-Demand varies significantly by hour and weekday
-Weekend demand differs from weekdays
-Forecasting indicates periods of increased future demand
+4. Dataset & Preprocessing
 
- Business Recommendations
+The dataset includes:
 
-Increase inventory during peak demand months
-Optimize staffing and supply during high-demand hours
-Focus sales strategy on high-growth drug categories
-Use forecasting results for proactive inventory planning
+Drug category
 
-Project Structure
+Sales date
 
-Pharma-Sales-Analytics
-│
-├── data
-├── notebooks
-├── sql
-├── excel
-├── dashboards
-├── presentation
-├── images
-└── README.md
+Monthly revenue
 
-Conclusion
+Yearly performance
 
-This project demonstrates an end-to-end data analytics workflow combining EDA, SQL, statistics, probability, machine learning, and business storytelling. It reflects real-world analytics tasks commonly performed in consulting and analytics-driven organizations.
+Sales metrics
+
+Preprocessing steps:
+
+Missing value handling
+
+Date formatting & feature extraction
+
+Aggregation by month and year
+
+KPI computation
+
+Category-level revenue breakdown
+
+5. Analytical Findings & Visual Insights
+5.1 Overall Revenue Growth Trend
+![Yearly Sales Trend](yearly_drug_sales_trend.png)
+
+Insights:
+
+Consistent upward revenue trend
+
+Strong mid-year spikes
+
+Indicates stable and growing market demand
+
+5.2 Revenue Concentration (Top Categories)
+![Top Categories](top_selling_categories.png)
+
+Insights:
+
+Limited categories generate majority revenue
+
+Revenue follows Pareto-like distribution
+
+Strategic focus on top SKUs can increase profitability
+
+5.3 Monthly Seasonal Heatmap
+![Monthly Heatmap](monthwise_avg_sales_heatmap.png)
+
+Insights:
+
+Predictable seasonal peaks
+
+Certain months consistently outperform
+
+Supports proactive inventory planning
+
+5.4 Monthly Sales Distribution (Volatility Analysis)
+![Monthly Distribution](monthly_sales_distribution.png)
+
+Insights:
+
+Reveals sales spread across months
+
+Identifies outliers and revenue variability
+
+Useful for risk-based demand planning
+
+5.5 Category-Wise Performance Trend
+![Category Trend](category_trend_over_time.png)
+
+Insights:
+
+Compares growth trajectory of major drug categories
+
+Identifies stable vs fluctuating categories
+
+Enables product-level strategic decisions
+
+5.6 Cumulative Revenue Growth
+![Cumulative Revenue](cumulative_revenue_growth.png)
+
+Insights:
+
+Demonstrates long-term compounding revenue
+
+Shows acceleration pattern
+
+Useful for performance evaluation
+
+5.7 Sales Forecast Projection
+![Forecast](drug_sales_forecast.png)
+
+Insights:
+
+Predicts steady growth trend
+
+Assists quarterly demand planning
+
+Reduces stock-out and overstock risks
+
+6. Business Recommendations
+
+Based on analysis:
+
+Prioritize high-revenue categories
+
+Implement seasonal inventory allocation
+
+Use forecast outputs for quarterly planning
+
+Review underperforming categories
+
+Integrate predictive models into operations
+
+7. Dashboard Features
+
+The Power BI dashboard includes:
+
+Revenue KPIs
+
+Category-level comparison
+
+Monthly trend visualization
+
+Seasonal heatmaps
+
+Forecast analysis
+
+Interactive filters and slicers
+
+8. End-to-End Workflow
+
+Data Cleaning
+
+Feature Engineering
+
+Exploratory Data Analysis
+
+KPI Derivation
+
+Visualization
+
+Forecast Modeling
+
+Dashboard Reporting
+
+9. Skills Demonstrated
+
+Data Cleaning & Transformation
+
+KPI Identification
+
+Revenue Concentration Analysis
+
+Seasonal Trend Analysis
+
+Forecast Interpretation
+
+Business Insight Generation
+
+Dashboard Design
+
+Data Storytelling
+
+10. How to Run
+pip install pandas numpy matplotlib seaborn scikit-learn
+
+Run Jupyter notebooks
+
+Open Power BI dashboard
+
+Explore insights interactively

@@ -24,7 +24,7 @@ Overall Revenue Growth Trend
 The yearly revenue trend shows a consistent upward trajectory, indicating sustained market demand. Noticeable revenue spikes suggest cyclical performance, possibly influenced by seasonal or promotional effects. From a strategic standpoint, this reflects stable business expansion.
 
 Revenue Concentration by Drug Category
-![Top Categories](images/top_selling_categories.png)
+![Top Categories](top_selling_categories.png)
 
 The analysis reveals that a limited number of drug categories contribute significantly to total revenue. This distribution pattern resembles the Pareto principle, where a small subset of products generates the majority of revenue.
 

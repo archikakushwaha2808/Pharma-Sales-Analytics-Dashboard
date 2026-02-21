@@ -1,9 +1,11 @@
 Pharma Sales Analytics & Business Intelligence Case Study
+
 Executive Summary
 
 This project presents a comprehensive analysis of pharmaceutical sales data with the objective of identifying revenue drivers, understanding seasonal demand fluctuations, and evaluating product-level performance. The analysis converts raw transactional data into meaningful business insights that can assist decision-makers in improving revenue strategy, inventory planning, and operational efficiency.
 
 Through a combination of Python-based exploratory data analysis, SQL-driven KPI computation, and Power BI dashboard development, this project demonstrates how structured analytics can support strategic business decisions in a pharmaceutical sales environment.
+
 
 Business Context
 
@@ -17,11 +19,13 @@ The dataset consists of pharmaceutical transactional records including drug cate
 
 This structured preprocessing enabled deeper time-series analysis and KPI computation.
 
+
 Revenue & Trend Analysis
 Overall Revenue Growth Trend
 ![Yearly Sales Trend](yearly_drug_sales_trend.png)
 
 The yearly revenue trend shows a consistent upward trajectory, indicating sustained market demand. Noticeable revenue spikes suggest cyclical performance, possibly influenced by seasonal or promotional effects. From a strategic standpoint, this reflects stable business expansion.
+
 
 Revenue Concentration by Drug Category
 ![Top Categories](sales_contribution_by_drug_category.png)
@@ -30,15 +34,13 @@ The analysis reveals that a limited number of drug categories contribute signifi
 
 Such insight supports focused resource allocation and category prioritization strategies.
 
+
 Seasonal Demand Pattern
 ![Monthly Heatmap](monthwise_avg_sales_heatmap.png)
 
 The heatmap highlights recurring seasonal peaks and troughs in demand. Certain months consistently demonstrate stronger sales performance. This predictable seasonality enables proactive inventory planning and improved supply chain coordination.
 
-Monthly Revenue Distribution & Variability
-![Monthly Distribution](images/monthly_sales_distribution.png)
 
-This visualization reveals revenue spread and volatility across months. It identifies periods of abnormal performance and revenue outliers. Understanding such variability allows businesses to manage risk more effectively during uncertain demand cycles.
 
 Category Performance Over Time
 ![Category Trend](images/category_trend_over_time.png)

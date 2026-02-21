@@ -43,19 +43,16 @@ The heatmap highlights recurring seasonal peaks and troughs in demand. Certain m
 
 
 Category Performance Over Time
-![Category Trend](images/category_trend_over_time.png)
+![Category Performance Over Time](monthly_drug_sales_trend.png)
 
 Tracking category-level trends over time highlights which drug segments demonstrate stable growth and which exhibit fluctuating patterns. This analysis supports product lifecycle management and category-level strategic decisions.
 
-Cumulative Revenue Growth
-![Cumulative Revenue](images/cumulative_revenue_growth.png)
-
-The cumulative growth curve illustrates long-term revenue acceleration and compounding growth. This perspective is useful for executive reporting and evaluating overall business trajectory.
 
 Sales Forecast Projection
 ![Forecast](images/drug_sales_forecast.png)
 
 The forecasting model projects future sales based on historical trends. The projection indicates continued growth, assisting with quarterly planning, procurement strategy, and revenue target setting.
+
 
 Business Interpretation
 

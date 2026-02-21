@@ -19,7 +19,7 @@ This structured preprocessing enabled deeper time-series analysis and KPI comput
 
 Revenue & Trend Analysis
 Overall Revenue Growth Trend
-![Yearly Sales Trend](images/yearly_drug_sales_trend.png)
+![Yearly Sales Trend](yearly_drug_sales_trend.png)
 
 The yearly revenue trend shows a consistent upward trajectory, indicating sustained market demand. Noticeable revenue spikes suggest cyclical performance, possibly influenced by seasonal or promotional effects. From a strategic standpoint, this reflects stable business expansion.
 

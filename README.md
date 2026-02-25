@@ -1,6 +1,6 @@
-Pharma Sales Analytics & Business Intelligence Case Study
+# Pharma Sales Analytics & Business Intelligence Case Study
 
-Executive Summary
+# Executive Summary
 
 This project presents a comprehensive analysis of pharmaceutical sales data with the objective of identifying revenue drivers, understanding seasonal demand fluctuations, and evaluating product-level performance. The analysis converts raw transactional data into meaningful business insights that can assist decision-makers in improving revenue strategy, inventory planning, and operational efficiency.
 
@@ -8,13 +8,13 @@ Through a combination of Python-based exploratory data analysis, SQL-driven KPI 
 
 
 
-Business Context
+# Business Context
 
 Pharmaceutical companies operate in highly demand-sensitive markets where slight forecasting errors can lead to financial inefficiencies such as overstocking or stock-outs. Understanding which drug categories drive revenue, how sales fluctuate across time, and how future demand may evolve is critical for sustainable growth.
 
 This analysis examines revenue concentration patterns, seasonal behavior, monthly variability, and long-term growth trends. The goal is to move beyond visualization and extract actionable business insights.
 
-Data Preparation & Feature Engineering
+# Data Preparation & Feature Engineering
 
 The dataset consists of pharmaceutical transactional records including drug categories, sales dates, and revenue metrics. Data preparation included handling missing values, standardizing date formats, extracting month and year components, and aggregating revenue at multiple time levels.
 
@@ -22,8 +22,8 @@ This structured preprocessing enabled deeper time-series analysis and KPI comput
 
 
 
-Revenue & Trend Analysis
-Overall Revenue Growth Trend
+# Revenue & Trend Analysis
+# Overall Revenue Growth Trend
 
 ![Yearly Sales Trend](yearly_drug_sales_trend.png)
 
@@ -31,7 +31,7 @@ The yearly revenue trend shows a consistent upward trajectory, indicating sustai
 
 
 
-Revenue Concentration by Drug Category
+# Revenue Concentration by Drug Category
 
 ![Top Categories](sales_contribution_by_drug_category.png)
 
@@ -41,7 +41,7 @@ Such insight supports focused resource allocation and category prioritization st
 
 
 
-Seasonal Demand Pattern
+# Seasonal Demand Pattern
 
 ![Monthly Heatmap](monthwise_avg_sales_heatmap.png)
 
@@ -50,7 +50,7 @@ The heatmap highlights recurring seasonal peaks and troughs in demand. Certain m
 
 
 
-Category Performance Over Time
+# Category Performance Over Time
 
 ![Category Performance Over Time](monthly_drug_sales_trend.png)
 
@@ -58,7 +58,7 @@ Tracking category-level trends over time highlights which drug segments demonstr
 
 
 
-Sales Forecast Projection
+# Sales Forecast Projection
 
 ![Forecast](drug_sales_forecast.png)
 
@@ -66,18 +66,18 @@ The forecasting model projects future sales based on historical trends. The proj
 
 
 
-Business Interpretation
+# Business Interpretation
 
 The combined findings suggest a business environment characterized by strong revenue concentration, predictable seasonal patterns, and sustained growth. Leveraging these insights enables improved inventory optimization, better resource allocation, and data-driven decision-making.
 
 
 
-Technical Stack
+# Technical Stack
 
 The project was implemented using Python for data cleaning and analysis, SQL for KPI aggregation, Excel for initial exploration, and Power BI for dashboard visualization. Together, these tools form a complete analytical workflow.
 
 
 
-Conclusion
+# Conclusion
 
 This case study demonstrates practical Data Analyst competencies including trend identification, revenue concentration analysis, seasonality detection, forecasting, and business storytelling. It reflects the ability to transform raw sales data into structured, strategic insights.
